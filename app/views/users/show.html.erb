@@ -37,3 +37,11 @@
     </div>
   </div>
 </div>
+<div class="images_main">
+  <div class="images_line">
+    <% current_user.posts.each do |post| %>
+      <% if post.photos[0].present? %>
+        <%= image_tag post.photos[0].image.url, height:"250",width:"250"%>
+    <% end %>
+  <% end %>
+</div>

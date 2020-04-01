@@ -1,5 +1,7 @@
 .profile-wrap{
   margin:40px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  padding: 30px 0px;
 }
 
 .round-img{
@@ -30,4 +32,17 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+.images_line{
+  margin-bottom: 20px;
+}
+
+.images_main{
+  max-width: 1140px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 180px;
+  margin-right: auto;
+  margin-left: auto;
 }
