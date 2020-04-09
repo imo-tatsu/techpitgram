@@ -47,7 +47,9 @@
   <div class="images_line">
     <% current_user.posts.each do |post| %>
       <% if post.photos[0].present? %>
-        <%= image_tag post.photos[0].image.url, height:"250",width:"250"%>
+        <%= link_to(post_path(post)) do %>
+          <%= image_tag post.photos[0].image.url, height:"250",width:"250"%>
+        <% end %>
     <% end %>
   <% end %>
 </div>
